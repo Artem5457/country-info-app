@@ -2,3 +2,4 @@ dist/
 README.md
 tsconfig.json
 .env
+src/generated/*
