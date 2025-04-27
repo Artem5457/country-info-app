@@ -43,4 +43,5 @@ This small application provides information about countries and add holidays to 
 
 ## Additional Info
 - `http://localhost:8000` — Local host.
+- Screenshot of existing users in database
 ![User table screenshot](./screenshots/db-screenshot.png)
