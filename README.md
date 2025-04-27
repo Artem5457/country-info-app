@@ -21,4 +21,26 @@ This small application provides information about countries and add holidays to 
 
 2. Get Country Info
 `POST /api/country/info`
-`{ countryCode: 'UA', countryName: 'Ukraine' }` — Example of request body.
+- `{ countryCode: 'UA', countryName: 'Ukraine' }` — Example of request body.
+
+3. Register User
+`POST /api/users/auth`
+- `{ name: 'Ivan', email: 'ivan@gmail.com' }` — Example of request body.
+
+4. Add Holidays To Calendar
+`POST /api/users/:userId/calendar/holidays`
+- `{
+  "countryCode": "US",
+  "year": 2025,
+  "holidays": ["New Year's Day", "Independence Day"]
+}` — Example of request body.
+
+5. Get All Users
+`GET /api/users`
+
+6. Get User Info
+`GET /api/users/:userId/info`
+
+## Additional Info
+- `http://localhost:8000` — Local host.
+![User table screenshot](./screenshots/db-screenshot.png)
